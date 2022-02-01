@@ -83,19 +83,25 @@ function numerosDeLaSuerte (array){
 console.log (numerosDeLaSuerte(arrayNumeros)); 
 
 // verificar si uno de los elementos del array es mayor a 10
-const goodInput = [8,9,10,11,16];
-function numerosMayorq10(array){
+const goodInput = [8, 9, 10, 11, 16];
+function numerosMayor10(array){
     return array.some(data => {
         return data > 10;
     })
 }
-console.log(numerosMayorq10(goodInput));
+console.log(numerosMayor10(goodInput));
 
 //1) Verificar si una de las cadenas de caracteres del array
 //tiene más de 10 caracteres
 
 const vectorCadenas = ["Ecuador", "Argentina", "Dinamarca","Coreal del Norte"];
-
+const  cadenaSeparaa =  vectorCadenas . paraCada ( elemento  => {
+    consola.registro ( elemento ) ;
+    
+} )
+const  palabras =  vectorCadenas . algunos ( datos  =>  {
+     datos  >  10 ;
+} )
 
 
 //2) Chequear si uno de los elementos de la matriz es true
@@ -107,7 +113,11 @@ const vectorBooleano = [
     [false, false, true]
 
   ];
-
+  if ( vectorBooleano . incluye ( Verdadero ) ) {
+    consola.log ( "Verdadero esta presente" ) ;
+  } {
+    consola.log ( "Verdadero no encontrado" ) ;
+  }
 
 
 //3) verificar si la palabra 'Lost' existe dentro del siguiente array:
